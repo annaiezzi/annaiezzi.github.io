@@ -1,5 +1,6 @@
 body {
-	width : 37.5em;
+	width: 100%;/* contraint la page à ne pas dépasser la largeur de l'écran */
+	max-width : 37.5em;/* évite que la page soit trop large */
 	margin: 0 auto;
 	padding: 1em;
 }
