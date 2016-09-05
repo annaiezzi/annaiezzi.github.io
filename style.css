@@ -6,14 +6,25 @@ body {
 	width: 100%;/* contraint la page à ne pas dépasser la largeur de l'écran */
 	max-width : 37.5em;/* évite que la page soit trop large */
 	margin: 0 auto;
-	padding: 1em;
 	font-family: Helvetica, Arial, sans-serif;/* liste de polices de caractères par ordre de préférence */
 	background-color: #fff;
 	color: #333;/* gris très foncé */
 }
+main {
+	padding: 1em;
+}
+
+footer {
+	border-top: solid 1pt #ccc;
+	margin-top: 5em;
+	padding: 2em 1em;
+}
 
 h1 {
 	color: #000;
+}
+nav ul {
+	text-align: center;
 }
 
 nav li{
@@ -23,10 +34,20 @@ nav li{
 nav a {
 	color: #333;
 	text-decoration: none;/* enlève le "soulignage" */
+	font-size: 0.8em;
+	text-transform: uppercase;
 }
 nav {
 	margin-bottom: 5em;
 }
 li {
 	margin-top: 1em;
+}
+
+a.twitter {
+	background : url('images/twitter.png') scroll left no-repeat;
+	background : url('images/twitter.svg') scroll left no-repeat;
+	background-size: contain;
+	padding-left : 1.5em;
+	text-decoration: none;
 }
