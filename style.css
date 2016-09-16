@@ -7,7 +7,7 @@ body {
 	max-width : 37.5em;/* évite que la page soit trop large */
 	margin: 0 auto;
 	font-family: Helvetica, Arial, sans-serif;/* liste de polices de caractères par ordre de préférence */
-	background-color: rgb(255,247,216);
+	background-color: rgb(255,217,246);
 	color: #333; /* gris très foncé */
 }
 main {
