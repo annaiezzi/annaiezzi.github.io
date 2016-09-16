@@ -34,10 +34,24 @@
 		<footer>
 			<a href="https://twitter.com/13zz1nha" class="twitter">@13zz1nha</a>
 			
-			<h6 align="right">
-			<script language="Javascript">
-			document.write("Dernière modification : " + document.lastModified +"");
-			</SCRIPT></h6>
+	
+			</script></h5>
+			
+			<h5 align="right">
+			<SCRIPT language="javascript">
+			<!--
+			var derniereModif=document.lastModified;
+			var dateModif = new Date(derniereModif);
+			var jour = dateModif.getDate();
+			var mois=dateModif.getMonth();
+			var annee=dateModif.getFullYear();
+			var heures=dateModif.getHours();
+			var minutes=dateModif.getMinutes();
+
+			document.write("Dernière modification : " + jour+"/"+(mois+1)+"/"+annee);
+
+			//-->
+			</SCRIPT></h5>
 		</footer>
 		
 		
