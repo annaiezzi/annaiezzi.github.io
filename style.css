@@ -8,16 +8,9 @@ body {
 	margin: 0 auto;
 	font-family: Helvetica, Arial, sans-serif;/* liste de polices de caractères par ordre de préférence */
 	background-color: #fff;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	color: #333; /*gris très foncé */
-=======
 	color: #333;/* gris très foncé */
->>>>>>> parent of 96dfc90... color
-=======
-	color: #333;/* gris très foncé */
->>>>>>> parent of 96dfc90... color
 }
+
 main {
 	padding: 1em;
 }
