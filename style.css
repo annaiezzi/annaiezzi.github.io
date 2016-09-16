@@ -1,14 +1,14 @@
-/*html {
-	background-color : rgb(255,247,216); jaune */
-}*/
+html {
+	/*background-color : #fc0;/* jaune */
+}
 
 body {
 	width: 100%;/* contraint la page à ne pas dépasser la largeur de l'écran */
 	max-width : 37.5em;/* évite que la page soit trop large */
 	margin: 0 auto;
 	font-family: Helvetica, Arial, sans-serif;/* liste de polices de caractères par ordre de préférence */
-	background-color: rgb(255,247,216);
-	/*color: #333; gris très foncé */
+	background-color: #fff;
+	color: #333; /*gris très foncé */
 }
 main {
 	padding: 1em;
