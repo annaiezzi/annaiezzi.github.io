@@ -29,8 +29,8 @@ header {
 .top-banner {
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(2em);
-  -webkit-backdrop-filter: blur(2em);
+  backdrop-filter: blur(0.5em);
+  -webkit-backdrop-filter: blur(0.5em);
   width: 100%;
   border-bottom: solid #fff 1pt;
   border-bottom: solid rgba(255, 255, 255, 0.8) 1pt; }
