@@ -33,7 +33,7 @@ nav ul {
 
 nav li{
 	display: inline;
-	margin: 0 0.5em;
+	margin: 0;
 }
 nav a {
 	color: #333;
@@ -41,6 +41,8 @@ nav a {
 	font-size: 0.8em;
 	text-transform: uppercase;
 }
+
+
 
 
 nav {
@@ -84,7 +86,7 @@ color: #000;
 /* Couleur utilisée pour le lien actif (celui qui est affiché sur la page) */
 .navbar-default2 .navbar-nav > .active > a, 
 .navbar-default2 .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default2 .navbar-nav > .active > a:focus {
 color: #000;
 background-color: #6bea79;
 }
@@ -122,7 +124,7 @@ background-color: #DDD;
 .navbar-default2 .navbar-toggle .icon-bar {
 background-color: #CCC;
 }
-@media (max-width: 767px) {
+@media (max-width: 76px) {
 .navbar-default2 .navbar-nav .open .dropdown-menu > li > a {
 color: #777;
 }
