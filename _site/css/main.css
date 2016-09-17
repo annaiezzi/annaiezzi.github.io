@@ -22,8 +22,10 @@ body {
   font-kerning: normal; }
 
 header {
-  background: url(../images/calanques.jpg) scroll no-repeat center;
-  background-size: cover;
+  background: url(../images/calanques.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: auto 100%;
   height: 25em; }
 
 .top-banner {
