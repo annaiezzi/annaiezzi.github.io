@@ -21,6 +21,11 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal; }
 
+header {
+  background: url(../images/calanques.jpg) scroll no-repeat center;
+  background-size: cover;
+  height: 25em; }
+
 .top-banner {
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.7);

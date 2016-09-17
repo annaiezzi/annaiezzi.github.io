@@ -30,7 +30,9 @@ body {
 // ----------------------------
 
 header {
-	//background: url(../images/calanques.jpg) scroll no-repeat center;
+	background: url(../images/calanques.jpg) scroll no-repeat center;
+	background-size: cover;
+	height: 25em;
 }
 
 .top-banner {
