@@ -114,8 +114,11 @@ color:#fff;
 color: #000;
 }
 /* Couleur utilisée pour le lien actif (celui qui est affiché sur la page) */
-.navbar-default2 .navbar-nav > .active > a, 
-.navbar-default2 .navbar-nav > .active > a:hover, 
+.navbar-default2 .navbar-nav > .active > a{
+    background-color: #4CAF50;
+    color: white;
+}, 
+.navbar-default2 .navbar-nav > .active > a:hover , 
 .navbar-default2 .navbar-nav > .active > a:focus {
 color: #000;
 background-color: #6bea79;
