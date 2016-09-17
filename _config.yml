@@ -8,9 +8,7 @@
 # Site settings
 title: Annamaria Iezzi
 email: annamaria.iezzi@univ-amu.fr
-description: > # this means to ignore newlines until "baseurl:"
- Doctorante en mathématiques à l'Institut de Mathématiques de Marseille 
- (I2M), Aix-Marseille Université (AMU).
+description: Site internet d'Annamaria Iezzi.
 
   
 baseurl: "" # the subpath of your site, e.g. /blog

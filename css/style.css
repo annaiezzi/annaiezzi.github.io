@@ -1,0 +1,170 @@
+html {
+	background-color : grey;
+}
+
+body {
+	width: 100%;/* contraint la page à ne pas dépasser la largeur de l'écran */
+	max-width : 65em; /*évite que la page soit trop large (avant 37.5em)*/
+	vertical-align: middle ;
+	margin: 3em auto;
+	font-family: Helvetica, Arial, sans-serif;/* liste de polices de caractères par ordre de préférence */
+	background-color: #fff;
+	color: #333; /* gris très foncé */
+	 border: 4px solid #383837;
+	 border-radius: 7px;
+}
+main {
+	padding-top: 3em;
+    padding-right: 1.5em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+}
+
+footer {
+	border-top: solid 1pt #ccc;
+	margin-top: 4em;
+	padding: 1em 1em;
+	background-color :#383837;
+	color:white;
+}
+
+h1 {
+	color: #000;
+}
+
+.row-divisor{
+  overflow: hidden;
+}
+.row-divisor > .row-divisor-right,
+.row-divisor > .row-divisor-left{
+  position:relative;
+  padding-bottom:9999em;
+  margin-bottom: -9999em;
+}
+.row-divisor-right:after,
+.row-divisor-left:after{
+  position:absolute;
+  top:0;
+  bottom:0;
+  border-left:1px solid black;
+  content:'';
+}
+.row-divisor-right:after{
+  right:0;
+}
+.row-divisor-left:after{
+  left:1em;
+  right:1em;
+}
+
+.center {
+    text-align: center;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav li{
+	display: inline;
+	margin: 0;
+}
+nav a {
+	color: #333;
+	text-decoration: none;/* enlève le "soulignage" */
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+
+
+
+nav {
+	margin-bottom: 5em;
+}
+li {
+	margin-top: 1em;
+}
+
+a.twitter {
+	background : url('images/twitter.png') scroll left no-repeat;
+	background : url('images/twitter.svg') scroll left no-repeat;
+	background-size: contain;
+	padding-left : 1.5em;
+	text-decoration: none;
+	color:white;
+}
+/* Classe principale de la barre de navigation */
+.navbar-default2 {
+/* Couleur de fond de la barre de navigation */
+background-color: #383837;
+border-color: #e7e7e7;
+}
+/* Couleur des titres affichés dans la barre */
+.navbar-default2 .navbar-brand {
+color: #E7E7E7;
+}
+/* Couleur utilisée lors du passage de la souris sur un titre de la barre */
+.navbar-default2 .navbar-brand:hover,
+.navbar-default2 .navbar-brand:focus {
+color: #6bea79;
+}
+/* Couleur utilisée pour les liens */
+.navbar-default2 .navbar-nav > li > a {
+color:#fff;
+}
+/* Couleur utilisée pour les liens lorsque la souris passe dessus */
+.navbar-default2 .navbar-nav > li > a:hover,
+.navbar-default2 .navbar-nav > li > a:focus {
+color: #000;
+}
+/* Couleur utilisée pour le lien actif (celui qui est affiché sur la page) */
+.navbar-default2 .navbar-nav > .active > a, 
+.navbar-default2 .navbar-nav > .active > a:hover , 
+.navbar-default2 .navbar-nav > .active > a:focus {
+color: #000;
+background-color: #6bea79;
+}
+/* Couleur utilisée pour un menu dépliant lorsqu'il est ouvert */
+.navbar-default2 .navbar-nav > .open > a, 
+.navbar-default2 .navbar-nav > .open > a:hover, 
+.navbar-default2 .navbar-nav > .open > a:focus {
+color: #555;
+background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-default2 .navbar-nav > .dropdown > a .caret {
+border-top-color: #777;
+border-bottom-color: #777;
+}
+.navbar-default2 .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default2 .navbar-nav > .dropdown > a:focus .caret {
+border-top-color: #333;
+border-bottom-color: #333;
+}
+.navbar-default2 .navbar-nav > .open > a .caret, 
+.navbar-default2 .navbar-nav > .open > a:hover .caret, 
+.navbar-default2 .navbar-nav > .open > a:focus .caret {
+border-top-color: #555;
+border-bottom-color: #555;
+}
+/* Version mobile, le menu devient une icône qui déroule une liste avec le menu en vertical */
+.navbar-default2 .navbar-toggle {
+border-color: #DDD;
+}
+.navbar-default2 .navbar-toggle:hover,
+.navbar-default2 .navbar-toggle:focus {
+background-color: #DDD;
+}
+.navbar-default2 .navbar-toggle .icon-bar {
+background-color: #CCC;
+}
+@media (max-width: 767px) {
+.navbar-default2 .navbar-nav .open .dropdown-menu > li > a {
+color: #777;
+}
+.navbar-default2 .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default2 .navbar-nav .open .dropdown-menu > li > a:focus {
+color: #333;
+}
+}
