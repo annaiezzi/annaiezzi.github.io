@@ -31,8 +31,6 @@ body {
 
 header {
 	background: url(../images/calanques.jpg) scroll no-repeat center;
-	backdrop-filter: blur(2em);
-	-webkit-backdrop-filter: blur(2em);
 	background-size: cover;
 	height: 25em;
 }
@@ -40,6 +38,8 @@ header {
 .top-banner {
 	background-color: #fff;
 	background-color: rgba(256,256,256,.7);
+	backdrop-filter: blur(2em);
+	-webkit-backdrop-filter: blur(2em);
 	width: 100%;
 	border-bottom: solid #fff 1pt;
 	border-bottom: solid rgba(255,255,255,.8) 1pt;
