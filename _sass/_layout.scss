@@ -37,6 +37,9 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+		/*text-decoration: none; enlève le "soulignage" */
+			font-size: 1em;
+			text-transform: uppercase;
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -61,6 +64,7 @@
             line-height: 0;
             padding-top: 10px;
             text-align: center;
+			
 
             > svg {
                 width: 18px;
@@ -75,6 +79,7 @@
         .trigger {
             clear: both;
             display: none;
+			
         }
 
         &:hover .trigger {
@@ -82,9 +87,12 @@
             padding-bottom: 5px;
         }
 
+		
+	
         .page-link {
             display: block;
             padding: 5px 10px;
+			
 
             &:not(:last-child) {
                 margin-right: 0;
