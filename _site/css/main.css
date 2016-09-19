@@ -26,7 +26,7 @@ header {
   background: url(../images/calanques.jpg) no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
-  background-size: auto 100%;
+  background-size: cover;
   height: 25em; }
 
 .top-banner {
