@@ -3,10 +3,10 @@
   <channel>
     <title>Annamaria Iezzi</title>
     <description>Site internet d'Annamaria Iezzi.</description>
-    <link>https://annaiezzi.github.iohttps://annaiezzi.github.io/</link>
-    <atom:link href="https://annaiezzi.github.iohttps://annaiezzi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Sep 2016 16:06:22 +0200</pubDate>
-    <lastBuildDate>Mon, 19 Sep 2016 16:06:22 +0200</lastBuildDate>
+    <link>https://annaiezzi.github.io/</link>
+    <atom:link href="https://annaiezzi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 19 Sep 2016 17:27:00 +0200</pubDate>
+    <lastBuildDate>Mon, 19 Sep 2016 17:27:00 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -27,8 +27,8 @@
 
 </description>
         <pubDate>Sun, 20 Dec 2015 18:23:44 +0100</pubDate>
-        <link>https://annaiezzi.github.iohttps://annaiezzi.github.io/jekyll/update/2015/12/20/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">https://annaiezzi.github.iohttps://annaiezzi.github.io/jekyll/update/2015/12/20/welcome-to-jekyll.html</guid>
+        <link>https://annaiezzi.github.io/jekyll/update/2015/12/20/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://annaiezzi.github.io/jekyll/update/2015/12/20/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
