@@ -46,6 +46,15 @@ header {
 	border-bottom: solid #fff 1pt;
 	border-bottom: solid rgba(255,255,255,.8) 1pt;
 }
+.btn {
+	margin: .2em;
+}
+a.btn:visited{
+	color: #fff;
+}
+h3{
+	text-indent:0.5em;
+}
 
 // ------------------------------------
 // fin des propriétés éditées à la main
@@ -92,6 +101,10 @@ figcaption {
  */
 ul, ol {
     margin-left: $spacing-unit;
+	li {
+		margin-top:1em;
+		
+	}
 }
 
 li {

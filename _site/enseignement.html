@@ -149,7 +149,13 @@
 		</div>
 		<div class="footer-col footer-col-1">
 			<p>Vous pouvez me contacter à l'adresse prénom.nom@univ-amu.fr ou utiliser le botton suivant :</p>
-			<p > <a href="mailto:annamaria.iezzi@univ-amu.fr" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
+			<script>
+			function sendEmail(name,surname) {
+			    location.href = 'mailto:' + name + '.' + surname +'@univ-amu.fr';
+			}
+			
+			</script>
+			<p > <a id="email" onclick="sendEmail('annamaria', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
 		</div>
 	</div>
 </div>

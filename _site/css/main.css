@@ -38,6 +38,15 @@ header {
   border-bottom: solid #fff 1pt;
   border-bottom: solid rgba(255, 255, 255, 0.8) 1pt; }
 
+.btn {
+  margin: .2em; }
+
+a.btn:visited {
+  color: #fff; }
+
+h3 {
+  text-indent: 0.5em; }
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -68,6 +77,8 @@ figcaption {
  */
 ul, ol {
   margin-left: 30px; }
+  ul li, ol li {
+    margin-top: 1em; }
 
 li > ul,
 li > ol {
