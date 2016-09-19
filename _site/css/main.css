@@ -252,6 +252,9 @@ pre {
 .social-media-list {
   list-style: none;
   margin-left: 0; }
+  .contact-list li,
+  .social-media-list li {
+    margin-top: 0em; }
 
 .footer-col-wrapper {
   font-size: 15px;
