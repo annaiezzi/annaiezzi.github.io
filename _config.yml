@@ -11,7 +11,7 @@ email: annamaria.iezzi@univ-amu.fr
 description: Site internet d'Annamaria Iezzi.
 
   
-baseurl: "https://annaiezzi.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://annaiezzi.github.io" # the base hostname & protocol for your site
 
 #social:
