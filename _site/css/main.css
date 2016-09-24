@@ -44,6 +44,10 @@ header {
 a.btn:visited {
   color: #fff; }
 
+hr {
+  align: center;
+  width: 80%; }
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
