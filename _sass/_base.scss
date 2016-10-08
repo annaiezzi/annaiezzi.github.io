@@ -56,6 +56,13 @@ a.btn:visited{
 hr{
 	align:center; 
 	width:80%;}
+	
+	.carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+         width: 100%;
+         margin: auto;
+     }
+     
 
 // ------------------------------------
 // fin des propriétés éditées à la main
