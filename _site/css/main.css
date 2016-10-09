@@ -53,6 +53,11 @@ hr {
   width: 100%;
   margin: auto; }
 
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto; }
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
