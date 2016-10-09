@@ -74,7 +74,7 @@ button.btn:hover {
   background-color: #c51954;
   border-color: #c51954; }
 
-.btn-pink:visited {
+button.btn:visited {
   color: #fff; }
 
 /**
