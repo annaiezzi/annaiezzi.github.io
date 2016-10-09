@@ -69,6 +69,9 @@ hr {
 button.btn:hover {
   color: #fff; }
 
+button.btn:visited {
+  color: #fff; }
+
 .btn-pink:hover {
   color: #fff;
   background-color: #c51954;
