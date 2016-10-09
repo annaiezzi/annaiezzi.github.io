@@ -58,6 +58,9 @@ hr {
   left: auto;
   right: auto; }
 
+.carousel-inner {
+  overflow: visible; }
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
