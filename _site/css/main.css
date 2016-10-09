@@ -69,13 +69,13 @@ hr {
 button.btn:hover {
   color: #fff; }
 
-button.btn:visited {
-  color: #fff; }
-
 .btn-pink:hover {
   color: #fff;
   background-color: #c51954;
   border-color: #c51954; }
+
+.btn-pink:visited {
+  color: #fff; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
