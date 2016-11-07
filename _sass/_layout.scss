@@ -17,7 +17,9 @@
     letter-spacing: -0.2px;
     margin-bottom: 0;
     float: left;
-
+    font: 'Oleo Script', Helvetica, sans-serif;
+     color: #2b2b2b;
+     text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
     &,
     &:visited {
         color: $grey-color-dark;
