@@ -33,16 +33,15 @@
     .menu-icon {
         display: none;
     }
+	
 	a:hover {
 		font-size: 1.2em;
 	    font-weight: bold;
 	}
-	
-	a:active {
-		font-size: 1.2em;
-	    font-weight: bold;
-	}
-	
+	//a:active {
+//		font-size: 1.2em;
+//	    font-weight: bold;
+//	}
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -56,7 +55,12 @@
             margin-right: 20px;
         }
 		
+		
     }
+	
+	
+	
+	
 	
 
     @include media-query($on-palm) {

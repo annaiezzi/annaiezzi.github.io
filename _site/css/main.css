@@ -231,9 +231,6 @@ pre {
   .site-nav a:hover {
     font-size: 1.2em;
     font-weight: bold; }
-  .site-nav a:active {
-    font-size: 1.2em;
-    font-weight: bold; }
   .site-nav .page-link {
     color: #111;
     line-height: 1.5;
