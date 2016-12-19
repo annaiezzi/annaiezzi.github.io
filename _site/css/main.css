@@ -74,6 +74,42 @@ hr.long2 {
   background-color: #007BA7;
   height: 1px; }
 
+hr.long3 {
+  width: 70%;
+  color: #A42424;
+  background-color: #A42424;
+  height: 5px; }
+
+hr.long4 {
+  width: 100%;
+  color: #A42424;
+  background-color: #A42424;
+  height: 1px; }
+
+hr.long5 {
+  width: 70%;
+  color: #008020;
+  background-color: #008020;
+  height: 5px; }
+
+hr.long6 {
+  width: 100%;
+  color: #008020;
+  background-color: #008020;
+  height: 1px; }
+
+hr.long7 {
+  width: 70%;
+  color: #E67630;
+  background-color: #E67630;
+  height: 5px; }
+
+hr.long8 {
+  width: 100%;
+  color: #E67630;
+  background-color: #E67630;
+  height: 1px; }
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
