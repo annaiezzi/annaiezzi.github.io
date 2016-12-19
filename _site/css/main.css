@@ -22,8 +22,19 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal; }
 
+.borderless table {
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: none; }
+
+td {
+  vertical-align: top;
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
 header {
-  background: url(../images/calanques.jpg) no-repeat;
+  background: url(../images/isle.jpg) no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
   background-size: cover;
@@ -47,6 +58,21 @@ a.btn:visited {
 hr {
   align: center;
   width: 80%; }
+
+hr.long {
+  width: 100%; }
+
+hr.long1 {
+  width: 70%;
+  color: #007BA7;
+  background-color: #007BA7;
+  height: 5px; }
+
+hr.long2 {
+  width: 100%;
+  color: #007BA7;
+  background-color: #007BA7;
+  height: 1px; }
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
