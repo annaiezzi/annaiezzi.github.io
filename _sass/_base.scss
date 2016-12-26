@@ -30,12 +30,14 @@ body {
 // ----------------------------
 
 
+
 .borderless table {
     border-top-style: none;
     border-left-style: none;
     border-right-style: none;
     border-bottom-style: none;
 }
+
 
 
 
@@ -62,6 +64,8 @@ header {
 	width: 100%;
 	border-bottom: solid #fff 1pt;
 	border-bottom: solid rgba(255,255,255,.8) 1pt;
+	position:fixed;
+	 z-index:100;
 }
 .btn {
 	margin: .2em;
