@@ -87,10 +87,10 @@
   	$(window).scroll(function(e){ 
   	  var $el = $('.top-banner'); 
   	  var isPositionFixed = ($el.css('position') == 'fixed');
-  	  if ($(this).scrollTop() < convertRem(30)){ 
+  	  if ($(this).scrollTop() < 364){ 
   	    $('.top-banner').css({'position': 'fixed', 'top': '0px', 'background-color':'rgba(256,256,256,.7)','border-bottom': 'solid #fff 1pt',
 	'border-bottom': 'solid rgba(255,255,255,.8) 1pt'}); 
-  	  } if ($(this).scrollTop() >convertRem(30) && isPositionFixed)
+  	  } if ($(this).scrollTop() >364 && isPositionFixed)
     {
       $('.top-banner').css({'position': 'fixed', 'top': '0px', 'background-color': 'rgba(252,252,252,1)','border-bottom': 'solid #b2adad 1pt'}); 
     } 
