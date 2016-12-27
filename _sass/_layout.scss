@@ -22,10 +22,12 @@
     margin-bottom: 0;
     float: left;
      text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+	 
     &,
     &:visited {
         color: $grey-color-dark;
     }
+//	&:hover {  color:black; background:#fff ; opacity: 0.8;}
 }
 
 
@@ -62,8 +64,11 @@
 		
     }
 	
-	
-	
+////
+//	#mymenu ul        {margin: 0px 0 0px 0px;float:left;width:100%; list-style: none;}
+//	#mymenu ul li     {float: left;margin: 0 0px 0 0;position: relative;}
+//	#mymenu a         {color: #000; display: block;font: 14px;padding: 14px 20px; text-transform:uppercase;}
+//	#mymenu a:hover {  color:black; background:#fff ; opacity: 0.8;}
 	
 	
 
@@ -75,6 +80,7 @@
         //border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+		
 
         .menu-icon {
             display: block;
