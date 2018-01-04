@@ -22,7 +22,7 @@
 		
 	      <div class="footer-col footer-col-1">
 			  {% if page.lang == 'en' %}
-	  			<p>To contact me, send an e-mail at the address <tt>aiezzi[at]usf.edu</tt> or use the following button:</p>
+	  			<p>To contact me, send an e-mail to the address <tt>aiezzi[at]usf.edu</tt> or use the following button:</p>
 	  			<script>
 	  			function sendEmail(name,surname) {
 	  			    location.href = 'mailto:' + name + surname +'@usf.edu';
@@ -77,7 +77,7 @@
 	var minutes=dateModif.getMinutes();
 	
 	{% if page.lang == 'en' %}
-		document.write("Last update (mm/dd/yy): " + (mois+1)+"/"+jour+"/"+annee);
+		document.write("Last update (mm/dd/yyyy): " + (mois+1)+"/"+jour+"/"+annee);
  {% endif %}{% if page.lang == 'fr' %}
 	document.write("Dernière modification : " + jour+"/"+(mois+1)+"/"+annee);
 {% endif %}
