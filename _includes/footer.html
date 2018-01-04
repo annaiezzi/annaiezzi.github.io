@@ -12,24 +12,47 @@
 		</div>
 		<div class="footer-col footer-col-3">
 			<p>
-				<a href="http://www.i2m.univ-amu.fr">Institut de Mathématiques de Marseille</a><br>
-				Bureau 114 - TPR2<br>
-				Campus de Luminy, Case 907<br>
-				163, Avenue de Luminy<br>
-				13288 MARSEILLE Cedex 9<br>
-				France
+				<a href="http://math.usf.edu/">Department of Mathematics & Statistics</a><br>
+				Office CMC110<br>
+				4202 East Fowler Avenue<br>
+				Tampa, FL 33620-5700<br>
+				United States
 			</p>
 		</div>
-		<div class="footer-col footer-col-1">
-			<p>Vous pouvez me contacter à l'adresse <tt>prénom.nom@univ-amu.fr</tt> ou utiliser le botton suivant :</p>
+		
+	      <div class="footer-col footer-col-1">
+			  {% if page.lang == 'en' %}
+	  			<p>To contact me, send an e-mail at the address <tt>aiezzi[at]usf.edu</tt> or use the following button:</p>
+	  			<script>
+	  			function sendEmail(name,surname) {
+	  			    location.href = 'mailto:' + name + surname +'@usf.edu';
+	  			}
+	
+	  			</script>
+	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
+			    {% endif %}{% if page.lang == 'fr' %}
+	  			<p>Pour me contacter, vous pouvez m'envoyer un e-mail  à l'adresse <tt>aiezzi[at]usf.edu</tt> ou utiliser le bouton suivant :</p>
+	  			<script>
+	  			function sendEmail(name,surname) {
+	  			    location.href = 'mailto:' + name + surname +'@usf.edu';
+	  			}
+	
+	  			</script>
+	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
+			    {% endif %}</a> 
+	        <p>{{ site.description[page.lang] }}</p>
+	      </div>
+	    </div>
+		<!--	<div class="footer-col footer-col-1">
+			<p>Vous pouvez me contacter à l'adresse <tt>aiezzi[at]usf.edu</tt> ou utiliser le botton suivant :</p>
 			<script>
 			function sendEmail(name,surname) {
 			    location.href = 'mailto:' + name + '.' + surname +'@univ-amu.fr';
 			}
-			
+	
 			</script>
 			<p > <a id="email" onclick="sendEmail('annamaria', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
-		</div>
+		</div>	-->	
 	</div>
 	
 </br>
@@ -52,9 +75,12 @@
 	var annee=dateModif.getFullYear();
 	var heures=dateModif.getHours();
 	var minutes=dateModif.getMinutes();
-
+	
+	{% if page.lang == 'en' %}
+		document.write("Last update (mm/dd/yy): " + (mois+1)+"/"+jour+"/"+annee);
+ {% endif %}{% if page.lang == 'fr' %}
 	document.write("Dernière modification : " + jour+"/"+(mois+1)+"/"+annee);
-
+{% endif %}
 	//-->
 	</SCRIPT><p>
 </div>

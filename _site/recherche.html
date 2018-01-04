@@ -26,7 +26,7 @@
   
   <!-- logo onglet -->
   
-  <link rel="shortcut icon" type="image/x-icon" href="images/logo_onglet2.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo_onglet5.png" />
   
     <!-- font titre -->
   <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
@@ -118,7 +118,9 @@
 	
   <div class="top-banner"> <div id="wrapper-top">
 
-    <a class="site-title" href="/">Annamaria IEZZI</a>
+    <a class="site-title" href="/">Annamaria IEZZI </a>
+
+
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -131,6 +133,7 @@
 
       <div class="trigger" ><!-- id="mymenu" -->
 		  <!-- <ul> -->
+
 		
 		
           
@@ -159,14 +162,6 @@
         
           
 		  
-          
-        
-          
-        
-          
-		  
-          
-        
           
         
           
@@ -193,10 +188,11 @@
 		  
           
         
-          
-		  
-          
-        
+		
+		
+		
+		
+
 	<!-- </ul> -->
 	
 		<!-- <div class="btn-group" role="group">
@@ -209,12 +205,38 @@
 		      <li><a href="#">Lien amis</a></li>
 		    </ul>
 		  </div> -->
-      </div>
+      
+	  
+	  
+	  </div>
+	  
+	  
+	
+	
     </nav>
+
 
   </div></div>
 
+
 </header>
+
+<div class="wrapper" style="text-align: right; line-height: 1em">
+
+
+<!--   
+   <a href="/research.html" class="en">en</a>  <a href="/recherche.html" class="fr">fr</a> -->
+  
+  
+ 	
+     <a href="/research.html" class="en">
+		 <img src="../images/en4.jpg"  height="75" hspace="10">
+  </a>  <a href="/recherche.html" class="fr"><img src="../images/fr6.jpg"  height="75" hspace="10">
+  </a> 
+  
+</div>
+
+
 
 
     <div class="page-content">
@@ -256,7 +278,7 @@
 				<p style="font-size:0.9em">
 					Langue : Français <br>
 					Directeur de thèse : <a href="http://iml.univ-mrs.fr/~aubry/aubry.html">Yves Aubry</a></span><br>
-					Soutenue le 6 juillet 2016 à l'Institut de Mathématiques de Marseille 
+					Soutenue le 6 juillet 2016 à <a href="http://www.univ-amu.fr/">Aix-Marseille Université</a>, à Marseille 
 				</p>
 				<!-- Trigger the modal with a button -->
 			<div>	<button type="button" class="btn  btn-xs btn-pink" data-toggle="modal" data-target="#myModal">Résumé</button>
@@ -291,7 +313,7 @@
 				<p style="font-size:0.9em">
 					Langue : Italien <br>
 					Encadrant : <a href="http://www.mat.uniroma3.it/users/gabelli/">Stefania Gabelli</a><br>
-					Soutenu le 18 juillet 2012 à l'<a href="http://www.uniroma3.it/">Università degli Studi di Roma 3</a> 
+					Soutenu le 18 juillet 2012 à l'<a href="http://www.uniroma3.it/">Università degli Studi di Roma 3</a>, à Rome 
 				</p>
 				<p><a href="documents/tesi.pdf" class="btn btn-primary btn-xs" role="button">pdf</a> <a href="documents/slides_tesi.pdf" class="btn btn-success btn-xs" role="button">slides</a></p>
 			</div>
@@ -379,24 +401,38 @@
 		</div>
 		<div class="footer-col footer-col-3">
 			<p>
-				<a href="http://www.i2m.univ-amu.fr">Institut de Mathématiques de Marseille</a><br>
-				Bureau 114 - TPR2<br>
-				Campus de Luminy, Case 907<br>
-				163, Avenue de Luminy<br>
-				13288 MARSEILLE Cedex 9<br>
-				France
+				<a href="http://math.usf.edu/">Department of Mathematics & Statistics</a><br>
+				Office CMC110<br>
+				4202 East Fowler Avenue<br>
+				Tampa, FL 33620-5700<br>
+				United States
 			</p>
 		</div>
-		<div class="footer-col footer-col-1">
-			<p>Vous pouvez me contacter à l'adresse <tt>prénom.nom@univ-amu.fr</tt> ou utiliser le botton suivant :</p>
+		
+	      <div class="footer-col footer-col-1">
+			  
+	  			<p>Pour me contacter, vous pouvez m'envoyer un e-mail  à l'adresse <tt>aiezzi[at]usf.edu</tt> ou utiliser le bouton suivant :</p>
+	  			<script>
+	  			function sendEmail(name,surname) {
+	  			    location.href = 'mailto:' + name + surname +'@usf.edu';
+	  			}
+	
+	  			</script>
+	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
+			    </a> 
+	        <p></p>
+	      </div>
+	    </div>
+		<!--	<div class="footer-col footer-col-1">
+			<p>Vous pouvez me contacter à l'adresse <tt>aiezzi[at]usf.edu</tt> ou utiliser le botton suivant :</p>
 			<script>
 			function sendEmail(name,surname) {
 			    location.href = 'mailto:' + name + '.' + surname +'@univ-amu.fr';
 			}
-			
+	
 			</script>
 			<p > <a id="email" onclick="sendEmail('annamaria', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
-		</div>
+		</div>	-->	
 	</div>
 	
 </br>
@@ -419,7 +455,8 @@
 	var annee=dateModif.getFullYear();
 	var heures=dateModif.getHours();
 	var minutes=dateModif.getMinutes();
-
+	
+	
 	document.write("Dernière modification : " + jour+"/"+(mois+1)+"/"+annee);
 
 	//-->
