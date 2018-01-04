@@ -8,9 +8,10 @@
 # Site settings
 title: Annamaria IEZZI
 email: annamaria.iezzi@univ-amu.fr
-description: Page professionnelle d'Annamaria Iezzi, docteur en mathématiques et ATER à Aix-Marseille Université.
+# description: Page professionnelle d'Annamaria Iezzi, docteur en mathématiques et ATER à Aix-Marseille Université.
 
-  
+ description: Personal homepage of Annamaria Iezzi, Ph.D in Mathematics, currently postdoctoral researcher at University of South Florida.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://annaiezzi.github.io" # the base hostname & protocol for your site
 
