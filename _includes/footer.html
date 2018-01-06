@@ -39,7 +39,16 @@
 	
 	  			</script>
 	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
-			    {% endif %}</a> 
+			    {% endif %}{% if page.lang == 'it' %}
+	  			<p>Per contattarmi potete inviarmi un'e-mail all'indirizzo <tt>aiezzi[at]usf.edu</tt> o utilizzare questo pulsante:</p>
+	  			<script>
+	  			function sendEmail(name,surname) {
+	  			    location.href = 'mailto:' + name + surname +'@usf.edu';
+	  			}
+	
+	  			</script>
+	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
+			    {% endif %} 
 	        <p>{{ site.description[page.lang] }}</p>
 	      </div>
 	    </div>
@@ -80,6 +89,8 @@
 		document.write("Last update (mm/dd/yyyy): " + (mois+1)+"/"+jour+"/"+annee);
  {% endif %}{% if page.lang == 'fr' %}
 	document.write("Dernière modification : " + jour+"/"+(mois+1)+"/"+annee);
+{% endif %}{% if page.lang == 'it' %}
+	document.write("Ultima modifica: " + jour+"/"+(mois+1)+"/"+annee);
 {% endif %}
 	//-->
 	</SCRIPT><p>
