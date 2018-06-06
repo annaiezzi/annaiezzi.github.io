@@ -11,43 +11,43 @@
 			</ul>
 		</div>
 		<div class="footer-col footer-col-3">
-			<p>
+			<center><p>
 				<a href="http://math.usf.edu/">Department of Mathematics & Statistics</a><br>
 				Office CMC110<br>
 				4202 East Fowler Avenue<br>
 				Tampa, FL 33620-5700<br>
 				United States
-			</p>
+			</p></center>
 		</div>
 		
 	      <div class="footer-col footer-col-1">
 			  {% if page.lang == 'en' %}
-	  			<p>To contact me, send an e-mail to the address <center><p style="margin:7px;line-height:10px;"><tt>aiezzi</tt><img src="images/snail.png" width="18ex"><tt>usf.edu</tt></p></center> or use the following button:</p>
+	  			<center><p>To contact me, send an e-mail to the address <center><p style="margin:7px;line-height:10px;"><tt>aiezzi</tt><img src="images/snail.png" width="18ex"><tt>usf.edu</tt></p></center> or use the following button:</p>
 	  			<script>
 	  			function sendEmail(name,surname) {
 	  			    location.href = 'mailto:' + name + surname +'@usf.edu';
 	  			}
 	
 	  			</script>
-	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
+	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p></center>
 			    {% endif %}{% if page.lang == 'fr' %}
-	  			<p>Pour me contacter, vous pouvez m'envoyer un e-mail  à l'adresse <center><p style="margin:7px;line-height:10px;"><tt>aiezzi</tt><img src="images/snail.png" width="18ex"><tt>usf.edu</tt></p></center> ou utiliser le bouton suivant :</p>
+	  			<center><p>Pour me contacter, vous pouvez m'envoyer un e-mail  à l'adresse <center><p style="margin:7px;line-height:10px;"><tt>aiezzi</tt><img src="images/snail.png" width="18ex"><tt>usf.edu</tt></p></center> ou utiliser le bouton suivant :</p>
 	  			<script>
 	  			function sendEmail(name,surname) {
 	  			    location.href = 'mailto:' + name + surname +'@usf.edu';
 	  			}
 	
 	  			</script>
-	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
+	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p></center>
 			    {% endif %}{% if page.lang == 'it' %}
-	  			<p>Per contattarmi potete inviarmi un'e-mail all'indirizzo <center><p style="margin:7px;line-height:10px;"><tt>aiezzi</tt><img src="images/snail.png" width="18ex"><tt>usf.edu</tt></p></center> o utilizzare questo pulsante:</p>
+	  			<center><p>Per contattarmi potete inviarmi un'e-mail all'indirizzo <center><p style="margin:7px;line-height:10px;"><tt>aiezzi</tt><img src="images/snail.png" width="18ex"><tt>usf.edu</tt></p></center> o utilizzare questo pulsante:</p>
 	  			<script>
 	  			function sendEmail(name,surname) {
 	  			    location.href = 'mailto:' + name + surname +'@usf.edu';
 	  			}
 	
 	  			</script>
-	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p>
+	  			<p > <a id="email" onclick="sendEmail('a', 'iezzi')" class="btn btn-primary btn-sm" role="button">E-mail</a></p></center>
 			    {% endif %} 
 	        <p>{{ site.description[page.lang] }}</p>
 	      </div>
@@ -93,7 +93,7 @@
 	document.write("Ultima modifica: " + jour+"/"+(mois+1)+"/"+annee);
 {% endif %}
 	//-->
-	</SCRIPT><p>
+	</SCRIPT></p>
 </div>
 </div>
 </footer>
