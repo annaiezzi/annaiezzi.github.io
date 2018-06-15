@@ -59,7 +59,7 @@
 
 </header>
 
-<div class="wrapper" style="text-align: right; line-height: 1em">
+<div class="wrapper" style="text-align: center; line-height: 1em">
 
 
 <!--   {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
@@ -68,8 +68,8 @@
   
  	{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
     {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{% if page.lang == 'en' %}
-		 <img src="../images/en4.jpg"  height="75" hspace="10">
-  {% endif %}{% if page.lang == 'fr' %}<img src="../images/fr6.jpg"  height="75" hspace="10">
+		 <img src="../images/en4.jpg"  height="75" >
+  {% endif %}{% if page.lang == 'fr' %}<img src="../images/fr6.jpg"  height="75" hspace="30">
   {% endif %}{% if page.lang == 'it' %}<img src="../images/it2.jpg"  height="75" hspace="20">
   {% endif %}</a> {% endfor %}
   
