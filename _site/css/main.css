@@ -151,6 +151,12 @@ hr.long8 {
   background-color: #E67630;
   height: 1px; }
 
+hr.long9 {
+  width: 80%;
+  color: rgba(255, 14, 135, 0.5);
+  background-color: rgba(255, 14, 135, 0.5);
+  height: 0.5px; }
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
@@ -277,7 +283,7 @@ pre {
  */
 .wrapper {
   max-width: -webkit-calc(800px - (30px * 2));
-  max-width: calc(800px - (30px * 2));
+  max-width: 90%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;

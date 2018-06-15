@@ -178,6 +178,11 @@ color: #E67630;
 background-color: #E67630;
 height: 1px; 
 }
+hr.long9{width:80%;
+color: rgba(255,14,135,0.5);
+background-color: rgba(255,14,135,0.5);
+height: 0.5px; 
+}
 	
 	.carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
@@ -364,7 +369,8 @@ pre {
  */
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    //max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+	max-width: 90%;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
