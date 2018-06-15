@@ -389,7 +389,8 @@ pre {
         display: block;
         padding: 5px 10px;
         text-align: center;
-        margin-right: 20px; } }
+        margin-right: 20px;
+        margin-left: 20px; } }
 
 /**
  * Site footer
