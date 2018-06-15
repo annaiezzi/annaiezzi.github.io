@@ -290,7 +290,7 @@ pre {
       padding-left: 15px; } }
 
 #wrapper-top {
-  width: 75%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
@@ -345,10 +345,10 @@ pre {
   .site-nav .menu-icon {
     display: none; }
   .site-nav a:hover {
-    font-size: 1.2em;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #ff0e87; }
   .site-nav .page-link {
-    color: #111;
+    color: #282828;
     line-height: 1.5;
     /*text-decoration: none; enlève le "soulignage" */
     font-size: 1em;
@@ -368,16 +368,17 @@ pre {
         display: block;
         float: right;
         width: 36px;
-        height: 26px;
+        height: 36px;
         line-height: 0;
         padding-top: 10px;
         padding-bottom: 10px;
-        text-align: center; }
+        text-align: center;
+        background-color: #ff0e87; }
         .site-nav .menu-icon > svg {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #424242; }
+            fill: white; }
       .site-nav .trigger {
         clear: both;
         display: none; }

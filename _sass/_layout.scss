@@ -41,15 +41,17 @@
     }
 	
 	a:hover {
-		font-size: 1.2em;
+		//font-size: 1.2em;
+		
 	    font-weight: bold;
+		color:rgba(255,14,135,1);
 	}
 	//a:active {
 //		font-size: 1.2em;
 //	    font-weight: bold;
 //	}
     .page-link {
-        color: $text-color;
+        color: rgba(40,40,40,1);
         line-height: $base-line-height;
 		/*text-decoration: none; enlève le "soulignage" */
 			font-size: 1em;
@@ -86,11 +88,12 @@
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 36px;
             line-height: 0;
             padding-top: 10px;
 			padding-bottom: 10px;
             text-align: center;
+			background-color:rgba(255,14,135,1);
 			
 
             > svg {
@@ -98,7 +101,8 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    //fill: $grey-color-dark;
+					fill:white;
                 }
             }
         }
