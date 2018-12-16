@@ -61,6 +61,15 @@ body {
   -ms-transform: translate(-50%, -50%);
   text-align: center; }
 
+.site-nav {
+  margin-right: 1em; }
+
+.menu-icon {
+  border-radius: 5px; }
+
+a {
+  word-break: break-all; }
+
 .borderless table {
   border-top-style: none;
   border-left-style: none;
