@@ -42,7 +42,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
  <!-- <link href="css/thumbnail-gallery.css" rel="stylesheet"> -->
   
 <script>
@@ -120,6 +120,40 @@
 		)
 	})
     </script>
+	
+	
+	<script>
+	function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /*loop through a collection of all HTML elements:*/
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+	    elmnt = z[i];
+	    /*search for elements with a certain atrribute:*/
+	    file = elmnt.getAttribute("w3-include-html");
+	    if (file) {
+	      /*make an HTTP request using the attribute value as the file name:*/
+	      xhttp = new XMLHttpRequest();
+	      xhttp.onreadystatechange = function() {
+	        if (this.readyState == 4) {
+	          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+	          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+	          /*remove the attribute, and call this function once more:*/
+	          elmnt.removeAttribute("w3-include-html");
+	          includeHTML();
+	        }
+	      }      
+	      xhttp.open("GET", file, true);
+	      xhttp.send();
+	      /*exit the function:*/
+	      return;
+	    }
+	  }
+	};
+	</script>
+	
+	
+	
 	
 </head>
 
@@ -353,206 +387,12 @@
 	<hr class="long4" >
 	<div class="home">
 		<h3>Exposés</h3>
-		<ul>
-			
-						<li><p><strong>01/08/2019</strong>: <em>Un échange de clés dans le monde des calculateurs quantiques</em>, Retraite <a href="https://anr-manta.inria.fr/">ANR Manta</a>, Paris, France.</p>
-									<div>		
-					
-											<a href="documents/slides-manta.pdf" class="btn btn-success btn-xs" role="button">slides</a>
-										</div>
-			
-										</li>
-							
-							
-			
-						<li><p><strong>12/11/2018</strong>: <em>A note on the security of CSIDH</em>, <a href="https://www.isical.ac.in/~indocrypt/">Indocrypt 2018</a>, New Delhi, India.</p>
-									<div>			
-										<!-- Trigger the modal with a button -->
-										<button type="button" class="btn btn-xs btn-pink" data-toggle="modal" data-target="#0503">Abstract</button>
+		<div w3-include-html="talks2.html"></div> 
 
-										<!-- Modal -->
-										<div class="modal fade" id="0503" role="dialog">
-											<div class="modal-dialog">
-     
-												<!-- Modal content-->
-												<div class="modal-content">
-													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal">&times;</button>
-														<h4 class="modal-title"><em>A note on the security of CSIDH</em></h4>
-													</div>
-													<div class="modal-body">
-														<p>We propose a quantum algorithm for computing an isogeny between two elliptic curves $E_1,E_2$ defined over a finite field such that there is an imaginary quadratic order $\mathcal O$ satisfying $\mathcal O\simeq \End(E_i)$ for $i = 1,2$. This concerns ordinary curves and 
-			supersingular curves defined over $\mathbb F_p$ (the latter used in the recent CSIDH proposal). </p>
 
-			<p>Our 
-			algorithm has heuristic asymptotic run time $e^{O\left(\sqrt{\log(|\Delta|)}\right)}$ and 
-			requires polynomial quantum memory and $e^{O\left(\sqrt{\log(|\Delta|)}\right)}$ quantumly accessible classical memory, 
-			where $\Delta$ is the discriminant of 
-			$\mathcal O$. This asymptotic complexity outperforms all other available methods for computing isogenies. 
-			</p>
-														</div>
-														<div class="modal-footer">
-															<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-														</div>
-													</div>
-      
-												</div>
-											</div>
-					
-											<!-- <a href="documents/180305-USFseminar.pdf" class="btn btn-success btn-xs" role="button">slides</a> -->
-										</div>
-			
-										</li>
-							
-							
-							
-						<li><p><strong>19/11/2018</strong>: <em>On the security of a recent isogeny-based cryptosystem</em>, <a href="http://www.math.usf.edu/research/seminars/discrete/spring18/">Discrete Mathematics Seminar</a>, <a href="http://www.math.usf.edu/">Department of Mathematics & Statistics</a>, University of South Florida.</p>
-									<div>			
-										<!-- Trigger the modal with a button -->
-										<button type="button" class="btn btn-xs btn-pink" data-toggle="modal" data-target="#0503">Abstract</button>
-
-										<!-- Modal -->
-										<div class="modal fade" id="0503" role="dialog">
-											<div class="modal-dialog">
-     
-												<!-- Modal content-->
-												<div class="modal-content">
-													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal">&times;</button>
-														<h4 class="modal-title"><em>On the security of a recent isogeny-based cryptosystem</em></h4>
-													</div>
-													<div class="modal-body">
-														<p>Because of their arithmetic properties,  since the 1980s elliptic curves have played a crucial role in  several public-key cryptosystems. Among these, the most recent ones, called \emph{isogeny-based cryptosystems},  use the notion of isogeny, a particular kind of map, between elliptic curves, and have been introduced in order to face the cryptanalytic powers of quantum computers. The security of these cryptosystems is based on the difficulty of computing an isogeny between two given isogenous elliptic curves.</p>
-
-			<p>In this seminar, after reviewing the fundamental mathematics of isogeny-based cryptography, I will discuss the security of the recent  isogeny-based cryptosystem  CSIDH proposed by Castryck et al. This will be also an opportunity to do  some algebraic number theory and graph theory. <p>
-
-			<p>This is a joint work with Jean-Fran\c{c}ois Biasse and Michael J. Jacobson..</p>
-														</div>
-														<div class="modal-footer">
-															<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-														</div>
-													</div>
-      
-												</div>
-											</div>
-					
-											<!-- <a href="documents/180305-USFseminar.pdf" class="btn btn-success btn-xs" role="button">slides</a> -->
-										</div>
-			
-										</li>
-			
-			
-			<li><p><strong>05/03/2018</strong>: <em>A singular trip through the world of algebraic curves over finite fields</em>, <a href="http://www.math.usf.edu/research/seminars/discrete/spring18/">Discrete Mathematics Seminar</a>, <a href="http://www.math.usf.edu/">Department of Mathematics & Statistics</a>, University of South Florida.</p>
-						<div>			
-							<!-- Trigger the modal with a button -->
-							<button type="button" class="btn btn-xs btn-pink" data-toggle="modal" data-target="#0503">Résumé</button>
-
-							<!-- Modal -->
-							<div class="modal fade" id="0503" role="dialog">
-								<div class="modal-dialog">
-     
-									<!-- Modal content-->
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title"><em>A singular trip through the world of algebraic curves over finite fields</em></h4>
-										</div>
-										<div class="modal-body">
-											<p>For an algebraic curve defined over a finite field $\mathbb F_q$, the number of rational points, i.e. of points of the curve with coordinates in $\mathbb F_q$, is always finite. Due to this discrete aspect, algebraic curves over finite fields have found, in the last 40 years, several applications in cryptography and coding theory.</p>           
-
-			     <p>In this talk, we will explore this problem of counting points, by showing the fundamental tools and results that appear in this theory. In particular, we will see how the case of smooth curves generalizes to the case of singular ones and we will present a construction of singular curves with many rational points.</p>
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-											</div>
-										</div>
-      
-									</div>
-								</div>
-					
-								<a href="documents/180305-USFseminar.pdf" class="btn btn-success btn-xs" role="button">slides</a>
-							</div>
-			
-							</li>
-							
-							
-			<li><p><strong>20/11/2016</strong> : <em>Curve su campi finiti a singolarità prescritte</em>, Seminario d'Algebra Commutativa, <a href="http://www.matfis.uniroma3.it/">Dipartimento di Matematica e Fisica</a>, Università degli Studi di Roma Tre.</p>
-						
-				<!-- Trigger the modal with a button -->
-				<button type="button" class="btn btn-xs btn-pink" data-toggle="modal" data-target="#myModal2">Abstract</button>
-
-				<!-- Modal -->
-				<div class="modal fade" id="myModal2" role="dialog">
-					<div class="modal-dialog">
-     
-						<!-- Modal content-->
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title"><em>Curve su campi finiti a singolarità prescritte</em></h4>
-							</div>
-							<div class="modal-body">
-								<p>Nella teoria delle curve definite su campi finiti, lo studio del numero di punti razionali riveste un ruolo fondamentale, anche in virtù delle numerose applicazioni, in teoria dell’informazione, alla crittografia e alla teoria dei codici.
-									Tale tema è stato ampiamente trattato nel caso di curve lisce, vedendo come attori principali Hasse, Weil e Serre. Noi ci interesseremo al caso più generale di curve singolari. 
-									Più precisamente, dopo aver richiamato gli oggetti e i risultati primari che intervengono nella teoria delle curve su campi finiti, ci concentreremo su una costruzione, basata su nozioni e metodi propri dell’algebra commutativa, di curve a singolarità <em>prescritte</em>. Tale costruzione permetterà di dimostrare alcuni risultati sul numero massimo di punti razionali di una curva definita su un dato campo finito e di fissati genere geometrico e aritmetico.</p>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-								</div>
-							</div>
-      
-						</div>
-					</div>
-			
-				</li>
-		
-				<li><p><strong>05/11/2015</strong> : <em>Courbes optimales et maximales</em>, Séminaire d’Arithmétique et Théorie de l’Information, <a href="http://www.i2m.univ-amu.fr/">Institut de Mathématiques de Marseille</a>, Aix-Marseille Université.</p>
-				
-				<button type="button" class="btn btn-xs btn-pink" data-toggle="modal" data-target="#myModal3">Résumé</button>
-
-				<!-- Modal -->
-				<div class="modal fade" id="myModal3" role="dialog">
-					<div class="modal-dialog">
-     
-						<!-- Modal content-->
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title"><em>Courbes optimales et maximales</em></h4>
-							</div>
-							<div class="modal-body">
-								<p>En utilisant une approche euclidienne, nous prouverons une nouvelle borne
-sur le nombre de points fermés de degrés 2 sur une courbe lisse définie sur
-le corps fini $\mathbb F_q$. Cette borne nous permettra de donner des
-conditions explicites sur q, g et $\pi$ pour la non-existence d'une courbe définie
-sur $\mathbb F_q$ de genre géométrique g et genre arithmétique $\pi$ avec
-$N_q(g)+\pi-g$ points rationnels. De plus, pour q carré, nous étudierons
-le spectre des genres des courbes maximales définies sur $\mathbb F_q$,
-c'est à dire l'ensemble des couples $(g,\pi)$ pour lesquels il existe une courbe
-définie sur $\mathbb F_q$ de genre géométrique $g$ et genre arithmétique
-$\pi$ avec $q+1+2g\sqrt{q}+\pi-g$ points rationnels.</p>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-								</div>
-							</div>
-      
-						</div>
-					</div>
-				</li>
-				<li><strong>18/05/2015</strong> : <em>Towards maximal singular curves over finite fields</em>, Arithmetics, Geometry, Cryptography and
-					Coding Theory 2015 (AGCT-2015), <a href="http://www.cirm-math.fr/">CIRM</a>, Marseille.
-				</br>
-				<a href="documents/Beamer-AGCT15.pdf" class="btn btn-success btn-xs" role="button">slides</a></li>
-				<li><strong>17/02/2015</strong> : <em>Sur le nombre maximum de points rationnels d’une courbe singulière sur un corps fini</em>, Séminaire Algébrique de l’<a href="http://imath.fr/">Institut de Mathématiques de Toulon</a> (IMATH), Université de Toulon.</li>
-				<li><strong>29/01/2015</strong> : <em>Sur le nombre maximum de points rationnels d’une courbe singulière sur un corps fini</em>, Séminaire d’Arithmétique et Théorie de l’Information, <a href="http://www.i2m.univ-amu.fr/">Institut de Mathématiques de Marseille</a>, Aix-Marseille Université.</li>
-				<li><strong>11/06/2014</strong> : <em>Singular curves over finite fields with many rational points</em>, <a href="http://yacc.univ-tln.fr/">Yet Another Conference on Cryptography 2014</a> (YACC 2014), Île de Porquerolles, France.</br>
-					<a href="documents/Beamer-YACC_sans-pauses.pdf" class="btn btn-success btn-xs" role="button">slides</a></li>
-					<li><strong>12/05/2014</strong> : <em>Singular curves over finite fields with many rational points</em>, <a href="http://mat.msgsu.edu.tr/~aad/2014/">Antalya Algebra Days XVI</a>, Antalya,
-						Turquie.</br>
-						<a href="documents/Beamer-Antalya_sans-pauses.pdf" class="btn btn-success btn-xs" role="button">slides</a></li>
-						<li><strong>14/05/2013</strong> : <em>Courbes avec un nombre fixé de points rationnels</em>, Séminaire Algébrique de l’<a href="http://imath.fr/">Institut de Mathématiques de Toulon</a> (IMATH), Université de Toulon</li>
-					</ul>
+		<script>
+		includeHTML();
+		</script>
 				</div>
 			</div>
 		</div>
