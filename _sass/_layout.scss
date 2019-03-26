@@ -177,7 +177,7 @@
     font-size: 15px;
     color: $grey-color;
     //margin-left: -$spacing-unit / 2;
-	margin: 0px $spacing-unit;
+	margin: 0px 0px;//$spacing-unit;
     @extend %clearfix;
 }
 
