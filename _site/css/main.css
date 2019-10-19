@@ -69,7 +69,7 @@ body {
   margin-right: 1em; }
 
 a {
-  word-break: break-all; }
+  word-break: normal; }
 
 .borderless table {
   border-top-style: none;
