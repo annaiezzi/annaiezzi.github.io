@@ -22,6 +22,9 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal; }
 
+.sizer {
+  width: 300px; }
+
 .container2 {
   position: relative;
   width: 90%;
