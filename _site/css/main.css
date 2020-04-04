@@ -80,7 +80,7 @@ button.btn:visited { color: #fff; }
 
 #myImg:hover { opacity: 0.5; }
 
-#ImgBridge:hover { animation: shake 0.5s; animation-iteration-count: 2; }
+#ImgBridge:hover { animation: shake 0.7s; animation-iteration-count: 3; }
 
 #img01 { border-radius: 5px; }
 
