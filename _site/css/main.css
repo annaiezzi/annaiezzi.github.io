@@ -59,6 +59,8 @@ hr.long8 { width: 100%; color: #E67630; background-color: #E67630; height: 1px; 
 
 hr.long9 { width: 80%; color: rgba(255, 14, 135, 0.5); background-color: rgba(255, 14, 135, 0.5); height: 0.5px; }
 
+hr.long11 { width: 1%; color: rgba(255, 255, 255, 0.5); background-color: rgba(255, 255, 255, 0.5); height: 0.5px; }
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img { width: 100%; margin: auto; }
 
 .carousel-caption { position: relative; left: auto; right: auto; }
@@ -80,7 +82,7 @@ button.btn:visited { color: #fff; }
 
 #myImg:hover { opacity: 0.5; }
 
-#ImgBridge:hover { animation: shake 1.3s; animation-iteration-count: 1; }
+#ImgBridge:hover { animation: shake 1s; animation-iteration-count: 1; }
 
 #img01 { border-radius: 5px; }
 
