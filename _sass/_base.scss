@@ -37,17 +37,16 @@ body {
 .container2 {
   position: relative;
   width: 90%;
-  margin: 0em  auto 1em;
 }
 
 
 .image {
   display: block;
-  width: 100%;
+  width: 45%;
   height: auto;
   border: 5px solid rgba(159, 40, 117, 0.15);
       border-radius: 10px;
-      padding: 0px;
+      padding: 0em;	  
 }
 
 .overlay {

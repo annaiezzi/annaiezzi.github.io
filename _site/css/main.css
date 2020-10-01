@@ -7,9 +7,9 @@ body { font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; color:
 
 .sizer { width: 300px; }
 
-.container2 { position: relative; width: 90%; margin: 0em  auto 1em; }
+.container2 { position: relative; width: 90%; }
 
-.image { display: block; width: 100%; height: auto; border: 5px solid rgba(159, 40, 117, 0.15); border-radius: 10px; padding: 0px; }
+.image { display: block; width: 45%; height: auto; border: 5px solid rgba(159, 40, 117, 0.15); border-radius: 10px; padding: 0em; }
 
 .overlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; opacity: 0; transition: .5s ease; background-color: rgba(159, 40, 117, 0.4); border-radius: 10px; }
 
