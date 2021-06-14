@@ -504,17 +504,48 @@ in the landscape of curves over finite fields), <a href="http://ed184.lif.univ-m
 		<hr class="long8">
 		<h3 style="text-align:center">Outreach articles</h3>
 			<hr class="long8">	</div>
-			
+		
 			<ul>
+				
+				
 				
 					<li> <em>Pi Day: An International Festival of Mathematics</em>, <a href="http://www.elenaberardini.it/">Elena Berardini</a>, <a href="https://joelcohen.github.io/">Joël Cohen</a>, <a href="https://geoffroy.re/">Guillaume Geoffroy</a> and Annamaria Iezzi. <a href="https://www.ems-ph.org/journals/show_issue.php?issn=1027-488X&vol=3&iss=107EMS.html"> EMS Newsletter 3 <strong>(2018)</strong> </a>, 36-37.
 							<br>
 									<a href="documents/art6.pdf" class="btn btn-primary btn-xs" role="button" >pdf</a>
 									<a href="https://www.ems-ph.org/journals/show_abstract.php?issn=1027-488X&vol=3&iss=107&rank=8" class="btn btn-warning btn-xs" role="button">link</a>
-								
+									
 				
 						</li>
 			</ul>
+			
+				<!-- <img src="../images/art6.jpg" alt="PiDayEMS" class="center gap-left" width="250"> --><div style="text-align:center">
+			<img id="PiDayEMS" src="images/art6.jpg" style="width:100%;max-width:200px;text-align:center">
+			<!-- The Modal -->
+			<div id="0000" class="modal2">
+				<span class="close2">&times;</span>
+				<img  class="modal2-content" id="img02">
+				<div id="caption"></div>
+			</div>
+			<script>
+				// Get the modal
+				var modal = document.getElementById('0000');
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementById('PiDayEMS');
+				var modalImg = document.getElementById("img02");
+				var captionText = document.getElementById("caption");
+				img.onclick = function(){
+					modal.style.display = "block";
+					modalImg.src = this.src;
+					captionText.innerHTML = this.alt;
+				}
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close2")[0];
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() { 
+					modal.style.display = "none";
+				}
+				</script></div>
+			
 
 			
 			
@@ -525,7 +556,12 @@ in the landscape of curves over finite fields), <a href="http://ed184.lif.univ-m
 		<div class="col-sm-7">
 	
 					<ul>
-						<li><strong>06/03/2021: </strong>Invited speaker at<em> <a href="https://sites.google.com/gssi.it/aperomat/home?authuser=0"><strong>Indovina chi viene a cena? Aperitivo con le matematiche</strong></a></em>, an event addressed to high school students and organized by the <a href="https://www.univaq.it/">Università degli Studi dell’Aquila</a> and the <a href="https://www.gssi.it/">GSSI - Gran Sasso Science Institute</a>. The event was part of the initiative <a  href="https://may12.womeninmaths.org/">May 12</a>.</li>
+						<li><strong>06/03/2021: </strong>Invited speaker at<em> <a href="https://sites.google.com/gssi.it/aperomat/home?authuser=0"><strong>Indovina chi viene a cena? Aperitivo con le matematiche</strong></a></em>, an event addressed to high school students and organized by the <a href="https://www.univaq.it/">Università degli Studi dell’Aquila</a> and the <a href="https://www.gssi.it/">GSSI - Gran Sasso Science Institute</a>. The event was part of the initiative <a  href="https://may12.womeninmaths.org/">May 12</a>.
+							
+							<p>My main interventions are at 31:18 and 52:53.</p>
+						
+								<div class="embed-video">	
+						<div class="videoWrapper"><iframe src="https://www.youtube.com/embed/wGKvO_fn3cA" width="450" height="250" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div></li>
 						
 						<li><strong>03/17/2021: </strong>Presenter for the regional regional stage of <em><strong>Ma thèse en 180s</strong></em> (Three-minute Ph.D.) in French Polynesia and member of the coaching team.</li>
 						
