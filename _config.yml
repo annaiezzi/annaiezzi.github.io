@@ -7,10 +7,10 @@
 
 # Site settings
 title: Annamaria IEZZI
-email: annamaria.iezzi@upf.pf
+email: annamaria.iezzi@unina.it
 # description: Page professionnelle d'Annamaria Iezzi, docteur en mathématiques et ATER à Aix-Marseille Université.
 
-description: Personal homepage of Annamaria Iezzi, Ph.D in Mathematics, currently at Université de la Polynésie Française.
+description: Personal homepage of Annamaria Iezzi, Ph.D in Mathematics, currently working as a researcher at the  Università degli Studi di Napoli Federico II.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://annaiezzi.github.io" # the base hostname & protocol for your site
