@@ -97,7 +97,7 @@
 	var minutes=dateModif.getMinutes();
 	
 	{% if page.lang == 'en' %}
-		document.write("Last update (mm/dd/yyyy): " + (mois+1)+"/"+jour+"/"+annee);
+		document.write("Last update (dd/mm/yyyy): " + jour+"/"+(mois+1)+"/"+annee);
  {% endif %}{% if page.lang == 'fr' %}
 	document.write("Dernière modification : " + jour+"/"+(mois+1)+"/"+annee);
 {% endif %}{% if page.lang == 'it' %}
